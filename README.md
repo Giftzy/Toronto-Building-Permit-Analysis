@@ -8,10 +8,10 @@ The workflow covers data loading, cleaning, visualization, and anomaly detection
 Key Steps
 
   1.  Data Loading
-        .  Reads the Toronto Building Permits dataset from CSV into a Pandas DataFrame.
+        -  Reads the Toronto Building Permits dataset from CSV into a Pandas DataFrame.
   2.  Exploratory Data Analysis (EDA)
-        .  Inspects data structure, missing values, and distributions.
-        .  Provides summary statistics.
+        -  Inspects data structure, missing values, and distributions.
+        -  Provides summary statistics.
   3.  Data Cleaning
         .  Handles missing values (e.g., filling with zeros).
         .  Prepares dataset for further analysis.
