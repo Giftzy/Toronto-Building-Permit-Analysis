@@ -1,58 +1,66 @@
-# Toronto Building Permit Analysis
+🏗️ Toronto Building Permits (TBP) Analysis
 
-Overview
+This repository contains a Jupyter Notebook that analyzes the Toronto Building Permits dataset. The project demonstrates a full workflow: data loading, cleaning, exploratory analysis, visualization, anomaly detection, and extended advanced techniques.
 
-This notebook analyzes Toronto Building Permit (TBP) data to identify trends, visualize distributions, handle missing values, and detect anomalies using machine learning methods.
-The workflow covers data loading, cleaning, visualization, and anomaly detection.
+📂 Project Overview
+The notebook walks through the following steps:
+1.  Data Loading
+      -  Loads the Toronto Building Permits dataset (Toronto Building Permits.csv) into a Pandas DataFrame.
+2.  Missing Values Analysis
+      -  Visualizes missing data using heatmaps.
+      -  Counts and lists missing values per column.
+3.  Exploratory Data Analysis (EDA)
+      -  Summarizes dataset statistics.
+      -  Plots categorical and numerical features for better understanding.
+      -  Identifies trends and distributions of key attributes.
+4.  Outlier & Anomaly Detection
+      -  Uses Isolation Forest to detect unusual records.
+      -  Applies Z-Score analysis for extreme outliers.
+      -  Visualizes anomalies.
+5.  Data Visualization
+      -  Histograms, boxplots, scatter plots.
+      -  Highlights anomalies visually.
+6.  Future Improvements (Advanced Section)
+      -  Automated preprocessing (missing value imputation).
+      -  Geospatial visualization with interactive maps (Folium).
+      -  Advanced anomaly detection using Autoencoders.
+      -  Interactive dashboards (Plotly Express).
+      -  Time-series analysis for seasonal trends.
 
-Key Steps
+🛠️ Tech Stack
+-  Languages & Libraries
+    -  Python 3.x
+    -  NumPy, Pandas
+    -  Matplotlib, Seaborn
+    -  Scikit-learn, SciPy
+    -  Folium (maps)
+    -  TensorFlow/Keras (Autoencoder anomaly detection)
+    -  Plotly Express (interactive dashboards)
 
-  1.  Data Loading
-        -  Reads the Toronto Building Permits dataset from CSV into a Pandas DataFrame.
-  2.  Exploratory Data Analysis (EDA)
-        -  Inspects data structure, missing values, and distributions.
-        -  Provides summary statistics.
-  3.  Data Cleaning
-        .  Handles missing values (e.g., filling with zeros).
-        .  Prepares dataset for further analysis.
-  4.  Visualization
-        .  Heatmaps for missing values.
-        .  Pair plots of key features segmented by permit type.
-        .  Distribution plots for permit categories.
-  5.  Outlier & Anomaly Detection
-        .  Applies Isolation Forest (sklearn) to detect anomalies in building permits data.
-        .  Compares with statistical methods (e.g., z-scores via scipy.stats).
+📊 Dataset
+  -  Source: Toronto Building Permits dataset
+  -  Format: CSV file (excel_work-data/Toronto Building Permits.csv)
+  -  Content: Permit details including type, status, application/issue dates, and construction info.
 
-Technologies Used
-  .  Python
-  .  Libraries:
-        .  numpy, pandas – data handling
-        .  matplotlib, seaborn – visualization
-        .  scipy – statistical analysis
-        .  sklearn – anomaly detection (Isolation Forest)
+🚀 How to Run
+  -  Clone this repository:
+        -  git clone <your-repo-url>
+        -  cd TBP_analysis
+  -  Install dependencies:
+        -  pip install -r requirements.txt
+  -  Launch Jupyter Notebook:
+        -  jupyter notebook
+  -  Open TBP_analysis_future.ipynb and run the cells step by step.
 
-File Structure
-  .  TBP_analysis.ipynb – main notebook containing analysis.
-  .  Toronto Building Permits.csv – dataset (not included here, ensure it is placed in the same directory).
+📈 Key Insights
+  -  Identified missing data patterns.
+  -  Highlighted most common permit categories and trends.
+  -  Detected anomalies with Isolation Forest, Z-Score, and Autoencoders.
+  -  Mapped permits on an interactive Toronto map.
+  -  Built dashboards and explored monthly trends in applications.
 
-How to Run
-  .Install dependencies:
-        pip install numpy pandas matplotlib seaborn scikit-learn scipy
-  .  Place the dataset Toronto Building Permits.csv in the working directory.
-  .  Open and run the notebook:
-  .  jupyter notebook TBP_analysis.ipynb
-
-Results
-    .  Visual insights into permit types and distributions.
-    .  Identification of missing values and cleaned dataset.
-    .  Outlier detection highlighting unusual permits or patterns.
-
-Future Improvements
-    .  Advanced ML Models: Use clustering (DBSCAN, K-Means) for anomaly grouping.
-    .  Feature Engineering: Extract temporal features (year, month) and geospatial insights.
-    .  Interactive Dashboards: Use Plotly or Dash for dynamic exploration.
-    .  Model Validation: Apply cross-validation and compare anomaly detection methods.
-
-Scalability: Transition analysis pipeline into a reusable Python module or ETL workflow.
-
-Geospatial Analysis: Map permit locations with Folium or GeoPandas for better urban insights.
+🔮 Future Work
+  -  Deploy dashboards as a web app (Dash or Streamlit).
+  -  Integrate real-time permit data (if available via API).
+  -  Enhance anomaly detection with clustering (DBSCAN, LOF).
+  -  Expand geospatial analysis (heatmaps, zoning overlays).
