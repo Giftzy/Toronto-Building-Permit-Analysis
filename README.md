@@ -64,3 +64,6 @@ The notebook walks through the following steps:
   -  Integrate real-time permit data (if available via API).
   -  Enhance anomaly detection with clustering (DBSCAN, LOF).
   -  Expand geospatial analysis (heatmaps, zoning overlays).
+
+📌 Author
+      - This notebook was created for exploratory analysis of Toronto Building Permits.
